@@ -1,26 +1,25 @@
 {
-  "name": "mvp",
+  "name": "ministry-field-map",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "jest --watchAll=false"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.100.1",
-    "@testing-library/jest-native": "^5.4.3",
-    "@testing-library/react-native": "^13.3.3",
     "expo": "55.0.10-canary-20260328-2049187",
-    "expo-auth-session": "^55.0.11-canary-20260328-2049187",
+    "expo-auth-session": "55.0.11-canary-20260328-2049187",
     "expo-constants": "55.0.10-canary-20260328-2049187",
-    "expo-crypto": "^55.0.11-canary-20260328-2049187",
+    "expo-crypto": "55.0.11-canary-20260328-2049187",
     "expo-linking": "55.0.10-canary-20260328-2049187",
     "expo-router": "55.0.9-canary-20260328-2049187",
-    "expo-secure-store": "^55.0.10-canary-20260328-2049187",
+    "expo-secure-store": "55.0.10-canary-20260328-2049187",
     "expo-status-bar": "55.0.5-canary-20260328-2049187",
-    "expo-web-browser": "^55.0.11-canary-20260328-2049187",
+    "expo-web-browser": "55.0.11-canary-20260328-2049187",
     "react": "19.2.0",
     "react-dom": "^19.2.4",
     "react-native": "0.83.4",
@@ -30,8 +29,15 @@
     "react-native-web": "^0.21.2"
   },
   "devDependencies": {
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.3.3",
     "@types/react": "~19.2.2",
+    "jest": "^29.0.0",
+    "jest-expo": "^55.0.0",
     "typescript": "~5.9.2"
+  },
+  "jest": {
+    "preset": "jest-expo"
   },
   "private": true
 }

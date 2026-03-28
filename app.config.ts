@@ -6,11 +6,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   slug: 'ministry-field-map',
   version: '1.0.0',
   orientation: 'portrait',
-  icon: './assets/images/icon.png',
+  icon: './assets/icon.png',
   scheme: 'ministryfieldmap',
   userInterfaceStyle: 'automatic',
   splash: {
-    image: './assets/images/splash-icon.png',
+    image: './assets/splash-icon.png',
     resizeMode: 'contain',
     backgroundColor: '#ffffff',
   },
@@ -23,7 +23,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   android: {
     adaptiveIcon: {
-      foregroundImage: './assets/images/adaptive-icon.png',
+      foregroundImage: './assets/android-icon-foreground.png',
       backgroundColor: '#ffffff',
     },
     package: 'com.ministryfieldmap.app',
@@ -39,9 +39,5 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ],
   experiments: {
     typedRoutes: true,
-  },
-  extra: {
-    supabaseUrl: process.env.EXPO_PUBLIC_SUPABASE_URL,
-    supabaseAnonKey: process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY,
   },
 });
